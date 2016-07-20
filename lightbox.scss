@@ -1,0 +1,79 @@
+// compileOnSave: false
+body.int-lightbox-activated {
+  overflow-y: hidden;
+}
+.int-lightbox-outer{
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+.int-lightbox-inner{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: table;
+}
+.int-lightbox-row{
+  display: table-row;
+}
+.int-lightbox-cell{
+  overflow-y: scroll;
+  display: table-cell;
+  vertical-align: middle;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+.int-lightbox-contents{
+  background-color: white;
+  border: 1px solid gray;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+}
+.int-lightbox-contents-inner{
+  margin: 1.75em;
+}
+.int-lightbox-btn-ex{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  color: gray;
+  border: none;
+  outline: none;
+  background: none;
+  &:hover{
+    color: black;
+  }
+}
+.int-lightbox-arr{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 8px;
+  svg{
+    cursor: pointer;
+  }
+}
+.int-lightbox-content-wrapper{
+  display: inline-block;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.int-lightbox-content-outer{
+  display: table;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

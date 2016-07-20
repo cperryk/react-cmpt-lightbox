@@ -1,0 +1,50 @@
+{
+  "name": "react-cmpt-lightbox",
+  "version": "1.0.0",
+  "description": "A stateless react component for rendering a lightbox with arbitrary content.",
+  "main": "Lightbox.js",
+  "scripts": {
+    "watch": "watchify test/test.js -o test/test.min.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "lightbox",
+    "popup"
+  ],
+  "author": "Chris Kirk",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ],
+      [
+        "scssify",
+        {
+          "autoInject": {
+            "styleTag": true
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "react": "^15.2.1",
+    "scssify": "^1.2.0"
+  },
+  "devDependencies": {
+    "lorem-ipsum": "^1.0.3",
+    "react-dom": "^15.2.1"
+  }
+}
