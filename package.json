@@ -1,6 +1,6 @@
 {
   "name": "react-cmpt-lightbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A stateless react component for rendering a lightbox with arbitrary content.",
   "main": "Lightbox.js",
   "scripts": {

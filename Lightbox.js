@@ -19,7 +19,6 @@ export default React.createClass({
     window.removeEventListener('keydown', this.handleKeyDown);
   },
   render: function(){
-    console.log('rendering');
     const {onClose, children, onBack, onNext} = this.props;
     const left_arr = onBack ?
       <div className="int-lightbox-arr int-lightbox-leftarr">
